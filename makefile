@@ -17,7 +17,7 @@ cmt: ## example make cmt c="COMMIT COMMENT"
 
 .PHONY: gp
 gp: ## example make gp b="branch_name(optional)" r="remote_name(optional)"
-	git pull ${r} ${b}
+	git pull ${r} ${b} --rebase
 	git push ${r} ${b}
 
 .PHONY: gcb
